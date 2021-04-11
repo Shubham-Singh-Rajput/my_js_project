@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</head>
+<style>
+  #one{
+    margin:200px;
+  }
+  #reset{
+    display: inline;
+  }
+</style>
+<body>
+  
+    <div class="row m-4 p-4" id="one">
+      <div class="col-4">
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">Enter The Total Buget</h5>
+            <p class="card-text"><input id="totalAmount" type="number" class="form-control" placeholder="Enter Total Buget"></p>
+            <a href="" id="submitamount" class="btn btn-primary">Calculate</a>
+          </div>
+        </div>
+
+      </div>
+      <div class="col-8">
+        <div class="row">
+          <div class="col ">
+            <div class="card" style="width: 18rem;">
+              <div class="card-body">
+                <h5 class="card-title">Buget</h5>
+                <p class="card-text" id="WritingBuget">0</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+              <div class="card-body">
+                <h5 class="card-title">Expenditure</h5>
+                <p class="card-text" id="TotalAmoutntPaid">0</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+              <div class="card-body">
+                <h5 class="card-title">Saving BUGET</h5>
+                <p class="card-text" id="SavingBuget">0</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      <div class="row m-4 p-4" id="two">
+        <div class="col">
+          <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">Enter The Product Name</h5>
+              <p class="card-text"><input id="ExpencesName" type="text" class="form-control" placeholder="Enter Product Name"></p>
+              <h5 class="card-title">Enter The Product Price</h5>
+              <p class="card-text"><input id="Expenceamount" type="number" class="form-control" placeholder="Enter Product  Price"></p>
+              <a href="" id = "submitexpences"class="btn btn-primary">Add Expenditure</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="row">
+            <div class="col">
+              Product Name
+            </div>
+            <div class="col-7">
+              Product Price
+            </div>
+          </div>
+          <div id="addind">
+            
+          </div>
+      </div>
+      </div>
+      <div style="margin-left: 45%;">
+      <div id = "reset" class="btn btn-primary ">RESET All</div>
+    </div>
+<script src="b.js"></script>
+</body>
+</html>
