@@ -55,8 +55,10 @@ let search=document.getElementById("search")
 search.addEventListener("keyup",(event)=>{
     let child=parent.children
     let arr =[].map.call(child,(i)=>{
-        let x=i.textContent.toLowerCase()
-        if(x.includes(search.value)){
+        let ids=i.getAttribute("id")
+        let childerns=document.getElementById(ids)
+        let text=(childerns.textContent.replace("DELETE",""))
+        if(text.toLowerCase().includes(search.value.toLowerCase())){
             i.style="";
         }
         else{
